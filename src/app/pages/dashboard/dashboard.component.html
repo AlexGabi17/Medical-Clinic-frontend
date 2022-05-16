@@ -1,0 +1,12 @@
+
+<h4>Lista doctorilor</h4>
+
+<ul>
+    <li *ngFor="let doctor of doctors">
+      <app-user-info 
+      [firstName]="doctor.name" 
+      [lastName]="doctor.specialization"
+      >
+    </app-user-info>
+    </li>
+</ul>
